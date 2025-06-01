@@ -1,0 +1,138 @@
+/* Основные стили футера */
+.footer {
+  background-color: #334155;
+  color: #e2e8f0;
+  padding: 48px 0 24px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Сетка колонок */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+/* Стили колонок */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #f8fafc;
+}
+
+/* Списки ссылок */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f8fafc;
+}
+
+/* Социальные сети */
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Цвета социальных сетей */
+.facebook {
+  background-color: #1877f2;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.google {
+  background-color: #dd4b39;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+  border-top: 1px solid #475569;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .footer {
+    padding: 32px 0 16px;
+  }
+
+  .footer-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
